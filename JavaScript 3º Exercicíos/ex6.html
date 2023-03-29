@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 6</title>
+</head>
+<body>
+    <script>
+// Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+    var continuar = true;
+while (continuar){
+   var nota1 = parseFloat(prompt('Digite sua primeira nota'));
+   var nota2 = parseFloat(prompt('Digite sua segunda nota'));
+    var soma = nota1 + nota2;
+    (soma/2);
+
+        if (soma > 9.5) {
+            document.write ("APROVADO, parabéns </br>");
+        }
+        else if (soma <= 9.5) {
+            document.write ("REPROVADO </br>");
+        }
+        continuar = prompt("Você deseja continuar Sim ou Não");
+        if (continuar != "sim"){
+            continuar = false
+        }
+    }
+
+
+    </script>
+    
+</body>
+</html>
